@@ -1,0 +1,96 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Check } from "lucide-react"
+
+export function LsatSection() {
+  const [isVisible, setIsVisible] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.1 },
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <section ref={sectionRef} id="lsat" className="relative py-32 md:py-40">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
+
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="mb-20 text-center">
+          <h2 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-6xl">
+            LSAT: Professional Notes for Pre-Law Students
+          </h2>
+          <p className="text-pretty text-xl text-foreground/70 md:text-2xl">
+            Preserve every logical framework, case analysis, and strategy
+          </p>
+        </div>
+
+        <div
+          className={`mx-auto grid max-w-6xl gap-12 md:grid-cols-5 items-center transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          {/* Left Column (60%) */}
+          <div className="md:col-span-3 space-y-8">
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              At $250-400/hour for LSAT tutoring, $125/month for comprehensive notes is less than half of one session.
+            </p>
+
+            <ul className="space-y-4">
+              {[
+                "Logical reasoning frameworks preserved",
+                "Reading comp strategies documented",
+                "Logic games approaches captured step-by-step",
+                "Case analysis breakdowns",
+                "Timing strategies and test-taking techniques",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <div className="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-secondary/20">
+                    <Check className="h-4 w-4 text-secondary" />
+                  </div>
+                  <span className="text-lg text-foreground/90">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="glass-card p-6 bg-secondary/10 border-secondary/30">
+              <p className="text-2xl font-bold text-secondary mb-2">$125/month per student</p>
+            </div>
+
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-secondary to-accent text-white hover:shadow-xl hover:shadow-secondary/50 transition-all duration-300"
+            >
+              <a href="#contact">View LSAT Sample Notes</a>
+            </Button>
+          </div>
+
+          {/* Right Column (40%) */}
+          <div className="md:col-span-2">
+            <div className="glass-card p-8 bg-gradient-to-br from-secondary/10 to-accent/10 border-secondary/30">
+              <p className="text-xl font-semibold text-foreground leading-relaxed">
+                Your pre-law students are investing thousands in LSAT prep. Give them comprehensive notes they can
+                actually use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
