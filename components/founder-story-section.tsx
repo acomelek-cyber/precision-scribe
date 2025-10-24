@@ -1,8 +1,6 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 
 export function FounderStorySection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -50,7 +48,7 @@ export function FounderStorySection() {
 
             <div className="space-y-5 text-lg leading-relaxed text-slate-300">
               <p>
-                The problem was obvious, but no one was solving it. My daughter Avery was working with an excellent ACT
+                The problem was obvious, but no one was solving it. My daughter was working with an excellent ACT
                 tutor—learning a lot during sessions—but forgetting most of it by the following week. Not because she
                 wasn't trying. Because retaining an hour of new information without comprehensive notes is nearly
                 impossible.
@@ -58,12 +56,10 @@ export function FounderStorySection() {
 
               <p>
                 As someone who works with AI, I built a solution: automatically record the session, transcribe it,
-                generate professional study notes, and deliver them within minutes.
+                generate professional study notes, and deliver them within minutes after the session.
               </p>
 
-              <p>
-                When I tested it with Avery's tutoring, her retention improved dramatically and her scores followed.
-              </p>
+              <p>When I tested it with her tutoring, her retention improved dramatically and her scores followed.</p>
 
               <p>
                 I realized this problem wasn't unique to high school students. College grads preparing for the LSAT face
@@ -80,16 +76,6 @@ export function FounderStorySection() {
             <div className="pt-4">
               <p className="text-lg italic text-slate-400">— Ali Comelekoglu</p>
               <p className="text-base text-slate-500">Founder, Precision Scribe</p>
-            </div>
-
-            <div className="pt-2">
-              <Link
-                href="/story"
-                className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors group"
-              >
-                Read Full Story
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
             </div>
           </div>
 
