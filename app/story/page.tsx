@@ -210,7 +210,7 @@ export default function StoryPage() {
             <div className="space-y-5 text-lg leading-relaxed text-slate-300">
               <p>I could've just kept this for personal use and moved on. But that felt like a waste.</p>
               <p>
-                The system works. It's not complicated to run. The economics make sense for tutoring companies. Students
+                The system works. It's not complicated to run. The economics make sense for tutoring companies. Learners
                 would benefit.
               </p>
               <p>So I'm reaching out to premium tutoring companies and offering to set this up for them:</p>
@@ -228,7 +228,7 @@ export default function StoryPage() {
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Why companies should care:</h3>
                 <ul className="space-y-2 text-slate-300 list-disc pl-6">
-                  <li>Better student outcomes (retention, confidence, scores)</li>
+                  <li>Better learner outcomes (retention, confidence, scores)</li>
                   <li>Zero extra work for tutors</li>
                   <li>Parents see tangible value from tutoring</li>
                   <li>Differentiates them from competitors</li>
@@ -237,11 +237,10 @@ export default function StoryPage() {
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Why I'm doing this:</h3>
                 <ul className="space-y-2 text-slate-300 list-disc pl-6">
-                  <li>It's a good business (profitable for everyone)</li>
+                  <li>It's great for learners</li>
                   <li>It solves a real problem I personally experienced</li>
                   <li>The technology is ready and works well</li>
                   <li>Someone should be doing this, might as well be me</li>
-                  <li>It's great for learners</li>
                 </ul>
               </div>
             </div>
@@ -271,7 +270,7 @@ export default function StoryPage() {
                 </div>
               </div>
               <p className="text-lg font-medium text-white mt-6">
-                This is a practical tool that makes tutoring more effective by solving one specific problem: students
+                This is a practical tool that makes tutoring more effective by solving one specific problem: learners
                 forgetting what they learned.
               </p>
               <p>That's it.</p>
@@ -289,7 +288,7 @@ export default function StoryPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
-                  <p className="text-slate-300">Helps students retain more from tutoring sessions</p>
+                  <p className="text-slate-300">Helps learners retain more from tutoring sessions</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
@@ -297,7 +296,7 @@ export default function StoryPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
-                  <p className="text-slate-300">Particularly helpful for ADHD/dyslexic students</p>
+                  <p className="text-slate-300">Particularly helpful for ADHD/dyslexic learners</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" />
@@ -311,7 +310,7 @@ export default function StoryPage() {
               <div className="mt-8 space-y-3 text-slate-300">
                 <p>If you run a tutoring company and this sounds useful, let's talk.</p>
                 <p>If you're a parent whose kid is in tutoring and forgetting everything, send this to their tutor.</p>
-                <p>If you're a student who wishes you had better notes, ask your tutor about it.</p>
+                <p>If you're a learner who wishes you had better notes, ask your tutor about it.</p>
               </div>
             </div>
           </section>
@@ -335,7 +334,7 @@ export default function StoryPage() {
                 </p>
                 <p className="text-slate-300 mb-2">I'll send you:</p>
                 <ul className="space-y-2 text-slate-300 list-disc pl-6">
-                  <li>Sample notes (so you can see what students get)</li>
+                  <li>Sample notes (so you can see what learners get)</li>
                   <li>Exact pricing breakdown</li>
                   <li>Technical requirements (basically just Google Meet)</li>
                   <li>Timeline for getting started (about a week)</li>
@@ -364,7 +363,7 @@ export default function StoryPage() {
         {/* CTA at bottom */}
         <div className="mt-16 pt-16 border-t border-slate-800">
           <div className="text-center space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-white">Ready to help your students succeed?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white">Ready to help your learners succeed?</h3>
             <p className="text-lg text-slate-400">
               Start a free pilot and see the difference comprehensive notes make.
             </p>

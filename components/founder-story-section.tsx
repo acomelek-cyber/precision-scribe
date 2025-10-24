@@ -50,29 +50,36 @@ export function FounderStorySection() {
 
             <div className="space-y-5 text-lg leading-relaxed text-slate-300">
               <p>
-                I built this because my daughter Avery was struggling to retain everything from her ACT tutoring
-                sessions. Great tutor, lots of learning—but by the next week, she'd forgotten half of it.
+                The problem was obvious, but no one was solving it. My daughter Avery was working with an excellent ACT
+                tutor—learning a lot during sessions—but forgetting most of it by the following week. Not because she
+                wasn't trying. Because retaining an hour of new information without comprehensive notes is nearly
+                impossible.
               </p>
 
               <p>
-                As someone who dabbles in AI, I thought: what if AI could automatically generate comprehensive study
-                notes after each session? So I built a system that does exactly that.
+                As someone who works with AI, I built a solution: automatically record the session, transcribe it,
+                generate professional study notes, and deliver them within minutes.
               </p>
 
               <p>
-                I tested it with Avery's tutoring sessions. It worked. She started reviewing the notes, retaining
-                concepts better, and her confidence (and scores) improved dramatically.
+                When I tested it with Avery's tutoring, her retention improved dramatically and her scores followed.
               </p>
 
               <p>
-                Then I realized: every student deserves this advantage. Not just high school students preparing for the
-                ACT, but also college grads tackling the LSAT and pre-med students mastering the MCAT. That's why
-                Precision Scribe now serves all three.
+                I realized this problem wasn't unique to high school students. College grads preparing for the LSAT face
+                the same challenge. So do pre-med students tackling the MCAT. Anyone investing hundreds of dollars per
+                hour in specialized tutoring deserves comprehensive notes that help them retain what they're learning.
+              </p>
+
+              <p>
+                That's why Precision Scribe now serves all three markets—because every student deserves to remember what
+                they learn.
               </p>
             </div>
 
             <div className="pt-4">
-              <p className="text-lg italic text-slate-400">— Ali Comelekoglu, Founder & Parent</p>
+              <p className="text-lg italic text-slate-400">— Ali Comelekoglu</p>
+              <p className="text-base text-slate-500">Founder, Precision Scribe</p>
             </div>
 
             <div className="pt-2">
