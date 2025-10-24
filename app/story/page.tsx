@@ -228,7 +228,6 @@ export default function StoryPage() {
               <div className="bg-slate-900/50 border border-slate-800 rounded-lg p-6 my-6">
                 <h3 className="text-xl font-semibold text-white mb-4">Why companies should care:</h3>
                 <ul className="space-y-2 text-slate-300 list-disc pl-6">
-                  <li>New revenue stream ($200-400/month with 20-30 students)</li>
                   <li>Better student outcomes (retention, confidence, scores)</li>
                   <li>Zero extra work for tutors</li>
                   <li>Parents see tangible value from tutoring</li>
@@ -242,6 +241,7 @@ export default function StoryPage() {
                   <li>It solves a real problem I personally experienced</li>
                   <li>The technology is ready and works well</li>
                   <li>Someone should be doing this, might as well be me</li>
+                  <li>It's great for learners</li>
                 </ul>
               </div>
             </div>

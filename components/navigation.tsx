@@ -12,7 +12,6 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "#how-it-works", label: "How It Works" },
     { href: "#sample-notes", label: "Sample Notes" },
-    { href: "/pricing", label: "Pricing" },
     { href: "#contact", label: "Contact" },
   ]
 
