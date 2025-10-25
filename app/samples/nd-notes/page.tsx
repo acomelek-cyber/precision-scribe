@@ -58,7 +58,7 @@ export default function NDNotesPage() {
 
             <div className="rounded-lg bg-green-500/10 p-4 border border-green-500/20">
               <p className="font-semibold text-green-400">
-                💚 My biggest win: I can do probability now! I understand when to multiply (AND) vs add (OR)
+                💚 I can do probability now! I understand when to multiply (AND) vs add (OR)
               </p>
             </div>
 
