@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, CheckCircle2, AlertCircle, Calendar, Clock, User } from "lucide-react"
+import { ArrowLeft, CheckCircle2, AlertCircle, Calendar, Clock, User, Sun } from "lucide-react"
 
 export default function GenericNotesPage() {
   return (
@@ -15,9 +15,17 @@ export default function GenericNotesPage() {
               Back to Home
             </Button>
           </Link>
-          <Badge variant="secondary" className="text-sm">
-            Sample Document
-          </Badge>
+          <div className="flex items-center gap-3">
+            <Badge variant="secondary" className="text-sm">
+              Sample Document
+            </Badge>
+            <Link href="/samples/generic-notes-light">
+              <Button variant="outline" size="sm" className="gap-2 bg-transparent">
+                <Sun className="h-4 w-4" />
+                Light Version
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 

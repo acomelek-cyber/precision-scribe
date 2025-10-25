@@ -50,7 +50,7 @@ export function FounderStorySection() {
               <p>
                 The problem was obvious, but no one was solving it. My daughter was working with an excellent ACT
                 tutor—learning a lot during sessions—but forgetting most of it by the following week. Not because she
-                wasn't trying. Because retaining an hour of new information without comprehensive notes is nearly
+                wasn't trying but because retaining an hour of new information without comprehensive notes is nearly
                 impossible.
               </p>
 
