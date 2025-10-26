@@ -68,11 +68,11 @@ export function ThreeMarketsSection() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="mb-20 text-center">
           <h2 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-6xl">
-            Study Notes That Actually Help—For Any Exam
+            Comprehensive Notes for Every Test Prep Journey
           </h2>
           <p className="text-pretty text-xl text-foreground/70 md:text-2xl">
-            Whether you tutor high school students or professional exam takers, Precision Scribe generates the notes
-            your students need
+            Whether you're teaching, tutoring, or learning, Precision Scribe generates comprehensive notes optimized for
+            test prep success
           </p>
         </div>
 

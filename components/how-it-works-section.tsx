@@ -6,14 +6,14 @@ import { Video, Cpu, Mail, Lock } from "lucide-react"
 const steps = [
   {
     icon: Video,
-    title: "Tutor Clicks Record",
+    title: "Click Record",
     description:
-      "Your tutor starts a Google Meet session and clicks record. They teach normally—whether it's ACT math, LSAT logic games, or MCAT biochemistry. No extra work required.",
+      "Start your Google Meet session and click record. The session happens normally—whether it's tutoring, a lecture, or a study group. No extra work required.",
     step: 1,
   },
   {
     icon: Cpu,
-    title: "AI Processes & Customizes",
+    title: "Automatically Processed & Formatted",
     description:
       "Session is transcribed and transformed into notes specifically optimized for the test being studied. ACT notes emphasize formulas and strategies. LSAT notes preserve logical frameworks. MCAT notes capture integrated science concepts.",
     step: 2,

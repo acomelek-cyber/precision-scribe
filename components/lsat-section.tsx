@@ -84,8 +84,8 @@ export function LsatSection() {
           <div className="md:col-span-2">
             <div className="glass-card p-8 bg-gradient-to-br from-secondary/10 to-accent/10 border-secondary/30">
               <p className="text-xl font-semibold text-foreground leading-relaxed">
-                Your pre-law students are investing thousands in LSAT prep. Give them comprehensive notes they can
-                actually use.
+                Pre-law students invest thousands in LSAT prep. Comprehensive notes help them retain everything they
+                learn.
               </p>
             </div>
           </div>

@@ -300,10 +300,10 @@ export default function NDNotesPage() {
 
               <div className="space-y-2">
                 {[
-                  "Step 1: Find what multiplies to LAST number",
-                  "Step 2: Find what ADDS to MIDDLE number",
-                  "Step 3: Try different arrangements and FOIL to check",
-                  "Step 4: If stuck after 2 tries, skip and come back",
+                  "Find what multiplies to LAST number",
+                  "Find what ADDS to MIDDLE number",
+                  "Try different arrangements and FOIL to check",
+                  "If stuck after 2 tries, skip and come back",
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary/20 text-sm font-bold text-secondary">
@@ -312,19 +312,6 @@ export default function NDNotesPage() {
                     <p className="text-foreground/90">{step.replace(/Step \d: /, "")}</p>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-4 rounded-lg bg-purple-500/10 p-4 border border-purple-500/20">
-                <div className="flex items-start gap-2">
-                  <Brain className="h-5 w-5 shrink-0 text-purple-400 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-purple-400">🧠 Brain Hack:</p>
-                    <p className="text-foreground/80">
-                      These are TIME TRAPS on the ACT. If it doesn't have a 1 in front, it might take forever. Skip if
-                      you're stuck after 1 minute.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 

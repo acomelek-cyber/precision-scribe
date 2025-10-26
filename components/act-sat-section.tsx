@@ -16,7 +16,7 @@ export function ActSatSection() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="mb-20 text-center">
           <h2 className="mb-6 text-balance text-4xl font-bold tracking-tight md:text-6xl">
-            ACT & SAT: Notes That Help High School Students Actually Remember
+            ACT & SAT: Notes That Help Students Actually Remember
           </h2>
           <p className="text-pretty text-xl text-foreground/70 md:text-2xl">
             Two formats designed for how students learn

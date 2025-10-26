@@ -11,8 +11,8 @@ const features = [
   },
   {
     icon: Bot,
-    title: "AI-only processing",
-    description: "No human review—only AI processes recordings. Completely automated.",
+    title: "Automated processing",
+    description: "No human review—completely automated and private.",
   },
   {
     icon: Trash2,

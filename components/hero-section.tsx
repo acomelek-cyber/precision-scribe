@@ -32,19 +32,15 @@ export function HeroSection() {
         <div
           className={`mx-auto max-w-5xl text-center transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <p className="mb-4 text-sm font-medium tracking-wide text-accent uppercase">
-            Built by a parent for students who deserve to remember what they learn
-          </p>
-
           <h1 className="mb-8 text-balance text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl">
-            <span className="gradient-text">AI Study Notes</span> for Every Test Prep Journey
+            <span className="gradient-text">Turn Any Session</span> Into Study Notes
           </h1>
 
           <p
             className={`mb-12 text-pretty text-xl text-foreground/80 md:text-2xl lg:text-3xl transition-all duration-1000 delay-300 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            Automated, comprehensive notes from tutoring sessions—for high school students prepping for the ACT/SAT,
-            college grads tackling the LSAT, and pre-med students mastering the MCAT.
+            Upload recordings from tutoring sessions, classroom lectures, or study groups. Get comprehensive,
+            professionally formatted notes within 20 minutes—optimized for ACT, SAT, LSAT, and MCAT prep.
           </p>
 
           <div

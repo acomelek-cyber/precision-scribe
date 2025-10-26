@@ -55,8 +55,8 @@ export function FounderStorySection() {
               </p>
 
               <p>
-                As someone who works with AI, I built a solution: automatically record the session, transcribe it,
-                generate professional study notes, and deliver them within minutes after the session.
+                I built an automated solution: record the session, transcribe it, generate professional study notes, and
+                deliver them within minutes.
               </p>
 
               <p>When I tested it with her tutoring, her retention improved dramatically and her scores followed.</p>
