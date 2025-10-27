@@ -133,7 +133,7 @@ export default function UploadPage() {
                         Turn Any Session Into Study Notes
                     </h1>
                     <p className="text-lg text-gray-600">
-                        Upload your recording and receive comprehensive study notes in 20 minutes
+                        Receive comprehensive study notes in few minutes
                     </p>
                 </div>
 
@@ -323,7 +323,6 @@ export default function UploadPage() {
                     <div className="mt-6 p-4 bg-gray-50 rounded-lg">
                         <p className="text-sm text-gray-600">
                             🔒 <strong>Privacy first:</strong> Your recording is deleted immediately after processing.
-                            We only keep the generated notes.
                         </p>
                     </div>
                 </div>
