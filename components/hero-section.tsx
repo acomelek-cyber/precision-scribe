@@ -39,8 +39,8 @@ export function HeroSection() {
           <p
             className={`mb-12 text-pretty text-xl text-foreground/80 md:text-2xl lg:text-3xl transition-all duration-1000 delay-300 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            Upload recordings from tutoring sessions, classroom lectures, or study groups. Get comprehensive,
-            professionally formatted notes within 20 minutes—optimized for ACT, SAT, LSAT, and MCAT prep.
+            Turn tutoring sessions, classroom lectures, or study groups into comprehensive, professionally formatted
+            notes within 20 minutes—optimized for ACT, SAT, LSAT, and MCAT prep.
           </p>
 
           <div
