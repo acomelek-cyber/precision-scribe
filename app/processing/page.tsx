@@ -1,10 +1,10 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import Link from 'next/link';
 
-export default function ProcessingPage() {
+function ProcessingContent() {
     const searchParams = useSearchParams();
     const email = searchParams.get('email');
     const [dots, setDots] = useState('');
@@ -107,5 +107,17 @@ export default function ProcessingPage() {
                 </p>
             </div>
         </div>
+    );
+}
+
+export default function ProcessingPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+                <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-500 border-t-transparent"></div>
+            </div>
+        }>
+            <ProcessingContent />
+        </Suspense>
     );
 }
