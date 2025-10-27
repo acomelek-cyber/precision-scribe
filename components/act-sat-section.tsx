@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { FileText, Sparkles, Check } from "lucide-react"
+import { FileText, Sparkles, BookOpen, Check } from "lucide-react"
 import Link from "next/link"
 
 export function ActSatSection() {
@@ -19,18 +19,17 @@ export function ActSatSection() {
             ACT & SAT: Notes That Help Students Actually Remember
           </h2>
           <p className="text-pretty text-xl text-foreground/70 md:text-2xl">
-            Two formats designed for how students learn
+            Three formats designed for how students learn
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Standard Notes Card */}
           <div
             onMouseEnter={() => setHoveredCard("standard")}
             onMouseLeave={() => setHoveredCard(null)}
-            className={`glass-card group relative overflow-hidden p-8 transition-all duration-500 ${
-              hoveredCard === "standard" ? "scale-105 shadow-2xl shadow-secondary/30" : ""
-            }`}
+            className={`glass-card group relative overflow-hidden p-8 transition-all duration-500 ${hoveredCard === "standard" ? "scale-105 shadow-2xl shadow-secondary/30" : ""
+              }`}
           >
             <div className="relative z-10">
               <div className="mb-6 flex items-start justify-between">
@@ -80,9 +79,8 @@ export function ActSatSection() {
           <div
             onMouseEnter={() => setHoveredCard("nd")}
             onMouseLeave={() => setHoveredCard(null)}
-            className={`glass-card group relative overflow-hidden border-2 border-accent/30 p-8 transition-all duration-500 ${
-              hoveredCard === "nd" ? "scale-105 shadow-2xl shadow-accent/30" : ""
-            }`}
+            className={`glass-card group relative overflow-hidden border-2 border-accent/30 p-8 transition-all duration-500 ${hoveredCard === "nd" ? "scale-105 shadow-2xl shadow-accent/30" : ""
+              }`}
           >
             <div className="relative z-10">
               <div className="mb-6 flex items-start justify-between">
@@ -90,13 +88,13 @@ export function ActSatSection() {
                   <Sparkles className="h-10 w-10 text-accent" />
                 </div>
                 <Badge className="bg-gradient-to-r from-accent to-primary text-white border-0 shadow-lg">
-                  Designed for neurodivergent learners
+                  For ADHD & autism
                 </Badge>
               </div>
 
               <h3 className="mb-3 text-3xl font-bold">ND-Enhanced Notes</h3>
               <p className="mb-8 text-lg text-foreground/70">
-                Optimized for ADHD, autism, dyslexia, and learning differences
+                Optimized for ADHD, autism, and executive function challenges
               </p>
 
               <ul className="mb-8 space-y-4">
@@ -129,11 +127,65 @@ export function ActSatSection() {
               className={`absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 transition-opacity duration-500 ${hoveredCard === "nd" ? "opacity-100" : ""}`}
             />
           </div>
+
+          {/* Dyslexia-Optimized Notes Card */}
+          <div
+            onMouseEnter={() => setHoveredCard("dyslexia")}
+            onMouseLeave={() => setHoveredCard(null)}
+            className={`glass-card group relative overflow-hidden border-2 border-emerald-500/30 p-8 transition-all duration-500 ${hoveredCard === "dyslexia" ? "scale-105 shadow-2xl shadow-emerald-500/30" : ""
+              }`}
+          >
+            <div className="relative z-10">
+              <div className="mb-6 flex items-start justify-between">
+                <div className="rounded-2xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 p-4">
+                  <BookOpen className="h-10 w-10 text-emerald-500" />
+                </div>
+                <Badge className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white border-0 shadow-lg">
+                  Easy-to-read format
+                </Badge>
+              </div>
+
+              <h3 className="mb-3 text-3xl font-bold">Dyslexia-Optimized</h3>
+              <p className="mb-8 text-lg text-foreground/70">
+                Specially formatted for dyslexic learners with reading challenges
+              </p>
+
+              <ul className="mb-8 space-y-4">
+                {[
+                  "Everything you need, SIMPLIFIED:",
+                  "Dyslexia-friendly fonts",
+                  "Short sentences (max 15 words)",
+                  "Extra-large text (16pt)",
+                  "Generous line spacing",
+                  "Cream background (easier on eyes)",
+                  "Phonetic word breaks",
+                  "One concept per line",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div className="mt-1 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/20">
+                      <Check className="h-3 w-3 text-emerald-500" />
+                    </div>
+                    <span className={`text-foreground/90 ${item.includes("SIMPLIFIED") ? "font-semibold" : ""}`}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Link href="/samples/dyslexia-notes">
+                <Button className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-xl hover:shadow-emerald-500/50 transition-all duration-300">
+                  View Dyslexia-Optimized Sample
+                </Button>
+              </Link>
+            </div>
+
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-0 transition-opacity duration-500 ${hoveredCard === "dyslexia" ? "opacity-100" : ""}`}
+            />
+          </div>
         </div>
 
         <div className="mt-12 text-center">
           <p className="text-xl font-semibold text-foreground">
-            PRICING: Standard $30/month | ND-Enhanced $50/month per student
+            PRICING: Standard $30/month | ND-Enhanced $50/month | Dyslexia-Optimized $50/month per student
           </p>
         </div>
       </div>
