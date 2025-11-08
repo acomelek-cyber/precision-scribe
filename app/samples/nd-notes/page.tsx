@@ -42,7 +42,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-purple-300 bg-gradient-to-br from-purple-50 to-blue-50 p-8 shadow-sm">
           <div className="mb-4 flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-purple-600" />
-            <h2 className="text-2xl font-bold">⚡ QUICK SUMMARY (Read This First!)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">⚡ QUICK SUMMARY (Read This First!)</h2>
           </div>
 
           <div className="space-y-4">
@@ -83,7 +83,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-red-300 bg-gradient-to-br from-red-50 to-orange-50 p-8 shadow-sm">
           <div className="mb-4 flex items-center gap-2">
             <AlertCircle className="h-6 w-6 text-red-600" />
-            <h2 className="text-2xl font-bold">🔴 MUST MEMORIZE (Flash Card These!)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">🔴 MUST MEMORIZE (Flash Card These!)</h2>
           </div>
 
           <div className="space-y-3">
@@ -119,7 +119,7 @@ export default function NDNotesPage() {
 
         {/* What We Actually Did Section */}
         <div className="mb-8">
-          <h2 className="mb-6 text-3xl font-bold">📝 WHAT WE ACTUALLY DID</h2>
+          <h2 className="mb-6 text-3xl font-bold text-gray-900">📝 WHAT WE ACTUALLY DID</h2>
 
           <div className="space-y-6">
             {/* Problem Type 1 */}
@@ -268,10 +268,28 @@ export default function NDNotesPage() {
 
                 <div className="rounded-lg bg-purple-50 p-4 border border-purple-200">
                   <p className="mb-2 font-semibold text-purple-600">Pattern to remember:</p>
-                  <div className="my-3 rounded bg-gray-50 p-4 font-mono text-center">
-                    ___ × ___ × ___ = total combinations
-                    <br />
-                    &nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp; 3 &nbsp;&nbsp;&nbsp;&nbsp; 2 &nbsp;&nbsp; = 24
+                  <div className="my-3 rounded bg-gray-50 p-4 text-gray-900">
+                    <div className="flex justify-center items-end gap-2 text-lg">
+                      <div className="flex flex-col items-center">
+                        <span className="w-12 h-8 border-b-2 border-gray-400"></span>
+                        <span className="font-bold text-xl text-purple-700 mt-1">4</span>
+                      </div>
+                      <span className="mb-1">×</span>
+                      <div className="flex flex-col items-center">
+                        <span className="w-12 h-8 border-b-2 border-gray-400"></span>
+                        <span className="font-bold text-xl text-purple-700 mt-1">3</span>
+                      </div>
+                      <span className="mb-1">×</span>
+                      <div className="flex flex-col items-center">
+                        <span className="w-12 h-8 border-b-2 border-gray-400"></span>
+                        <span className="font-bold text-xl text-purple-700 mt-1">2</span>
+                      </div>
+                      <span className="mb-1">=</span>
+                      <div className="flex flex-col items-center mb-1">
+                        <span className="text-sm">total</span>
+                        <span className="font-bold text-xl text-purple-700">24</span>
+                      </div>
+                    </div>
                   </div>
                   <p className="text-gray-700">
                     <span className="font-semibold text-yellow-700">Watch out:</span> If a digit can't repeat (like
@@ -285,7 +303,7 @@ export default function NDNotesPage() {
 
         {/* My System Section */}
         <div className="mb-8">
-          <h2 className="mb-6 text-3xl font-bold">🛠️ MY SYSTEM (Because Guessing Sucks)</h2>
+          <h2 className="mb-6 text-3xl font-bold text-gray-900">🛠️ MY SYSTEM (Because Guessing Sucks)</h2>
 
           <div className="space-y-6">
             {/* Factoring System */}
@@ -381,7 +399,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-blue-300 bg-gradient-to-br from-blue-50 to-cyan-50 shadow-sm p-8">
           <div className="mb-4 flex items-center gap-2">
             <Target className="h-6 w-6 text-blue-600" />
-            <h2 className="text-2xl font-bold">🏠 MY HOMEWORK (Executive Function Support)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">🏠 MY HOMEWORK (Executive Function Support)</h2>
           </div>
 
           <div className="space-y-6">
@@ -465,7 +483,7 @@ export default function NDNotesPage() {
         <div className="rounded-xl border border-gray-200 bg-white shadow-sm mb-8 p-8">
           <div className="mb-4 flex items-center gap-2">
             <Target className="h-6 w-6 text-purple-600" />
-            <h2 className="text-2xl font-bold">⏱️ MY TIMING STRATEGY</h2>
+            <h2 className="text-2xl font-bold text-gray-900">⏱️ MY TIMING STRATEGY</h2>
           </div>
 
           <div className="space-y-4">
@@ -475,7 +493,7 @@ export default function NDNotesPage() {
             </div>
 
             <div>
-              <p className="mb-3 font-semibold">After Question 20, work in ROUNDS:</p>
+              <p className="mb-3 font-semibold text-gray-900">After Question 20, work in ROUNDS:</p>
               <div className="space-y-3">
                 <div className="rounded-lg bg-gray-50 p-4">
                   <p className="font-semibold text-blue-600">
@@ -508,7 +526,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-purple-300 bg-white p-8 shadow-sm">
           <div className="mb-4 flex items-center gap-2">
             <CheckCircle className="h-6 w-6 text-purple-600" />
-            <h2 className="text-2xl font-bold">🎯 MY TEST DAY RULES</h2>
+            <h2 className="text-2xl font-bold text-gray-900">🎯 MY TEST DAY RULES</h2>
           </div>
 
           <div className="space-y-3">
@@ -534,7 +552,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-green-300 bg-gradient-to-br from-green-50 to-emerald-50 shadow-sm p-8">
           <div className="mb-4 flex items-center gap-2">
             <Star className="h-6 w-6 text-green-600" />
-            <h2 className="text-2xl font-bold">🌟 MY STRENGTHS (Yes, Really)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">🌟 MY STRENGTHS (Yes, Really)</h2>
           </div>
 
           <div className="space-y-3">
@@ -557,7 +575,7 @@ export default function NDNotesPage() {
         <div className="mb-8 rounded-xl border-2 border-pink-300 bg-gradient-to-br from-pink-50 to-purple-50 shadow-sm p-8">
           <div className="mb-4 flex items-center gap-2">
             <Heart className="h-6 w-6 text-pink-600" />
-            <h2 className="text-2xl font-bold">💚 SELF-COMPASSION REMINDER</h2>
+            <h2 className="text-2xl font-bold text-gray-900">💚 SELF-COMPASSION REMINDER</h2>
           </div>
 
           <div className="space-y-6">
@@ -592,7 +610,7 @@ export default function NDNotesPage() {
 
         {/* Final Encouragement */}
         <div className="rounded-xl border-2 border-purple-300 bg-gradient-to-br from-purple-50 to-blue-50 p-8 shadow-sm text-center">
-          <h2 className="mb-4 text-3xl font-bold">🎉 YOU'VE GOT THIS!</h2>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900">🎉 YOU'VE GOT THIS!</h2>
           <div className="space-y-4 text-lg text-gray-700">
             <p>
               Remember: The tutor said "I don't want to see you again" in the NICEST way - meaning she believes this is
