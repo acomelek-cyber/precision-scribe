@@ -46,10 +46,6 @@ export function LsatSection() {
         >
           {/* Left Column (60%) */}
           <div className="md:col-span-3 space-y-8">
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              At $250-400/hour for LSAT tutoring, $125/month for comprehensive notes is less than half of one session.
-            </p>
-
             <ul className="space-y-4">
               {[
                 "Logical reasoning frameworks preserved",
@@ -66,10 +62,6 @@ export function LsatSection() {
                 </li>
               ))}
             </ul>
-
-            <div className="glass-card p-6 bg-secondary/10 border-secondary/30">
-              <p className="text-2xl font-bold text-secondary mb-2">$125/month per student</p>
-            </div>
 
             <Button
               asChild

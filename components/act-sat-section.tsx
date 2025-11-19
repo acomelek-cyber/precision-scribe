@@ -182,12 +182,6 @@ export function ActSatSection() {
             />
           </div>
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-xl font-semibold text-foreground">
-            PRICING: Standard $30/month | ND-Enhanced $50/month | Dyslexia-Optimized $50/month per student
-          </p>
-        </div>
       </div>
     </section>
   )

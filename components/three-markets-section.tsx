@@ -10,7 +10,6 @@ const markets = [
     title: "ACT & SAT",
     subtitle: "High School Test Prep",
     description: "Two formats: Standard notes and ND-enhanced for neurodivergent learners",
-    pricing: "Starting at $30/month",
     link: "#act-sat",
     gradient: "from-accent to-primary",
   },
@@ -19,7 +18,6 @@ const markets = [
     title: "LSAT",
     subtitle: "Law School Test Prep",
     description: "Professional notes for logical reasoning, case analysis, and logic games",
-    pricing: "$125/month",
     link: "#lsat",
     gradient: "from-secondary to-accent",
   },
@@ -28,7 +26,6 @@ const markets = [
     title: "MCAT",
     subtitle: "Medical School Test Prep",
     description: "Integrated science notes across biology, chemistry, physics, and psychology",
-    pricing: "$175/month",
     link: "#mcat",
     gradient: "from-primary to-secondary",
   },
@@ -99,11 +96,6 @@ export function ThreeMarketsSection() {
                   {market.subtitle}
                 </p>
                 <p className="mb-6 text-center text-foreground/70 leading-relaxed">{market.description}</p>
-
-                {/* Pricing callout */}
-                <div className="mb-6 rounded-lg bg-accent/10 p-4 text-center">
-                  <p className="text-lg font-semibold text-accent">{market.pricing}</p>
-                </div>
 
                 <Button
                   asChild

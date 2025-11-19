@@ -55,11 +55,6 @@ export function McatSection() {
 
           {/* Right Column (60%) */}
           <div className="md:col-span-3 space-y-8">
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              At $300-500/hour for MCAT tutoring, $175/month for integrated science notes is less than half of one
-              session.
-            </p>
-
             <ul className="space-y-4">
               {[
                 "Cross-subject integrations preserved",
@@ -76,10 +71,6 @@ export function McatSection() {
                 </li>
               ))}
             </ul>
-
-            <div className="glass-card p-6 bg-primary/10 border-primary/30">
-              <p className="text-2xl font-bold text-primary mb-2">$175/month per student</p>
-            </div>
 
             <Button
               asChild
